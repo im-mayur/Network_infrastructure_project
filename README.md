@@ -1,7 +1,7 @@
 # Enterprise Network Infrastructure Project
 
 ## Overview
-This is a high-availability 3-tier enterprise network (Access, Core, Edge) with secure segmentation, redundancy, and controlled inter-VLAN communication.
+This is a high-availability 3-tier enterprise network (Access, Core, Edge) design with secure segmentation, redundancy, and controlled inter-VLAN communication.
 
 ## Tech Stack
 VLAN | Inter-VLAN Routing | HSRP | OSPF | NAT (PAT) | EtherChannel (LACP) | Extended ACLs | DHCP & Static  Addressing
@@ -22,7 +22,7 @@ Outcomes:
 
 • Implemented VLAN segmentation and Inter-VLAN routing using Layer-3 switches to enforce logical separation between management, application, and database tiers.
 
-• Deployed HSRP dual-core gateway redundancy, ensuring uninterrupted connectivity through              automatic failover.
+• Deployed HSRP dual-core gateway redundancy, ensuring uninterrupted connectivity through automatic failover.
 
 • Configured OSPF dynamic routing between core switches and edge router for intelligent path selection and rapid convergence.
 
