@@ -1,0 +1,162 @@
+hostname Access-SW-02
+
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ description NOC_EMERGENCY_ACCESS
+ switchport access vlan 10
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/4
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/5
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/6
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/7
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/8
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/9
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/10
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/11
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/12
+ description WEB_SERVER_FARM
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/13
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/14
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/15
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/16
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/17
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/18
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/19
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/20
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/21
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/22
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/23
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/24
+ description DATABASE_CLUSTER
+ switchport access vlan 30
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/1
+ description UPLINK_TO_CORE_L3
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ description UPLINK_TO_CORE_L3
+ switchport mode trunk
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ ip address 10.10.10.12 255.255.255.0
+!
+ip default-gateway 10.10.10.1
